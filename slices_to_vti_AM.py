@@ -1,10 +1,5 @@
 """
-ICRP 110 AM 슬라이스별 .g4dat → ParaView VTI 변환 스크립트 (수정판)
-
-수정 내용:
-  1. CellData → PointData 로 변경 (슬라이스 분리 현상 해결)
-  2. Extent를 PointData 방식(0~N-1)으로 통일
-  3. flatten 순서 명시적으로 수정 (x-fastest, C order)
+ICRP 110 AM 슬라이스별 .g4dat → ParaView VTI 변환 스크립트 
 
 사용법: python slices_to_vti_AM_fixed.py <슬라이스_폴더> [출력파일.vti]
 예시:   python slices_to_vti_AM_fixed.py AM phantom_AM.vti
